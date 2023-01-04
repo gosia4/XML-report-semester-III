@@ -1,0 +1,472 @@
+<Music>
+   <Composer>
+      <composer first_name="Fryderyk" surname="Chopin"/>
+      <Pieces>
+         <Piece>
+            <name>Etude</name>
+            <tonation>c-minor</tonation>
+            <op>10</op>
+            <nr>4</nr>
+            <level>very hard</level>
+            <publisherName> Universal Edition</publisherName>
+            <price cur="USD">3.00</price>
+            <nettoPrice cur="USD">2.44</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Nokturn</name>
+            <tonation>c-minor</tonation>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">19.99</price>
+            <nettoPrice cur="PLN">16.25</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Nokturn</name>
+            <tonation>a-minor</tonation>
+            <level>medium</level>
+            <publisherName>Zimmermann</publisherName>
+            <price cur="PLN">15.99</price>
+            <nettoPrice cur="PLN">13.00</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Polonais</name>
+            <tonation>g-minor</tonation>
+            <op>45</op>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">6.39</price>
+            <nettoPrice cur="EUR">5.20</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Waltz</name>
+            <tonation>a-minor</tonation>
+            <level>easy</level>
+            <publisherName>Zimmermann</publisherName>
+            <price cur="PLN">8.99</price>
+            <nettoPrice cur="PLN">7.31</nettoPrice>
+         </Piece>
+      </Pieces>
+      <Books>
+         <Book>
+            <content>Etudes</content>
+            <amount_of_pages>56</amount_of_pages>
+            <ISBN>241-05-745-4891-2</ISBN>
+            <publisherName>Edition Peters</publisherName>
+            <price cur="PLN">39.99</price>
+            <nettoPrice cur="PLN">32.51</nettoPrice>
+         </Book>
+         <Book>
+            <content>Nokturn</content>
+            <amount_of_pages>56</amount_of_pages>
+            <ISBN>341-95-745-0781-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">39.99</price>
+            <nettoPrice cur="PLN">32.51</nettoPrice>
+         </Book>
+         <Book>
+            <content>Songs</content>
+            <amount_of_pages>36</amount_of_pages>
+            <ISBN>671-94-785-0781-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">19.99</price>
+            <nettoPrice cur="PLN">16.25</nettoPrice>
+         </Book>
+         <Book>
+            <content>Waltz</content>
+            <amount_of_pages>78</amount_of_pages>
+            <ISBN>330-55-987-1234-2</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">45.99</price>
+            <nettoPrice cur="PLN">37.39</nettoPrice>
+         </Book>
+      </Books>
+   </Composer>
+   <Composer>
+      <composer first_name="Wolfgang Amadeusz" surname="Mozart"/>
+      <Pieces>
+         <Piece>
+            <name>Piano Concert</name>
+            <tonation>c-minor</tonation>
+            <nr>24</nr>
+            <level>hard</level>
+            <publisherName>Casa Ricordi</publisherName>
+            <price cur="EUR">9.39</price>
+            <nettoPrice cur="EUR">7.63</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Piano Concert</name>
+            <tonation>C-major</tonation>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">17.99</price>
+            <nettoPrice cur="PLN">14.63</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Sonate</name>
+            <tonation>f-minor</tonation>
+            <nr>4</nr>
+            <level>medium</level>
+            <publisherName>Casa Ricordi</publisherName>
+            <price cur="USD">3</price>
+            <nettoPrice cur="USD">2.44</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Symphony</name>
+            <tonation>g-minor</tonation>
+            <nr>40</nr>
+            <level>very hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">14.99</price>
+            <nettoPrice cur="EUR">12.19</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Symphony</name>
+            <tonation>Es-major</tonation>
+            <nr>5</nr>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">20.99</price>
+            <nettoPrice cur="EUR">17.07</nettoPrice>
+         </Piece>
+      </Pieces>
+      <Books>
+         <Book>
+            <content>Arias</content>
+            <amount_of_pages>82</amount_of_pages>
+            <ISBN>289-45-987-1098-2</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">25.99</price>
+            <nettoPrice cur="EUR">21.13</nettoPrice>
+         </Book>
+         <Book>
+            <content>Sonates</content>
+            <amount_of_pages>150</amount_of_pages>
+            <ISBN>927-95-790-3456-1</ISBN>
+            <publisherName>Oxford University Press</publisherName>
+            <price cur="PLN">89.99</price>
+            <nettoPrice cur="PLN">73.16</nettoPrice>
+         </Book>
+         <Book>
+            <content>Songs</content>
+            <amount_of_pages>50</amount_of_pages>
+            <ISBN>251-95-999-5681-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">39.99</price>
+            <nettoPrice cur="PLN">32.51</nettoPrice>
+         </Book>
+         <Book>
+            <content>Violin Concerts</content>
+            <amount_of_pages>200</amount_of_pages>
+            <ISBN>301-11-745-8951-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">49.99</price>
+            <nettoPrice cur="EUR">40.64</nettoPrice>
+         </Book>
+      </Books>
+   </Composer>
+   <Composer>
+      <composer first_name="Ludwig Van" surname="Beethoven"/>
+      <Pieces>
+         <Piece>
+            <name>Sonate</name>
+            <tonation>cis-minor</tonation>
+            <level>easy</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">15.99</price>
+            <nettoPrice cur="PLN">13.00</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Sonate</name>
+            <tonation>G-major</tonation>
+            <nr>8</nr>
+            <level>very hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="USD">2.57</price>
+            <nettoPrice cur="USD">2.09</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>String Quartet</name>
+            <tonation>D-major</tonation>
+            <nr>3</nr>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">19.99</price>
+            <nettoPrice cur="PLN">16.25</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>String Quartet</name>
+            <tonation>G-major</tonation>
+            <nr>3</nr>
+            <level>very hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">34.99</price>
+            <nettoPrice cur="PLN">28.45</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Symphony</name>
+            <tonation>c-minor</tonation>
+            <nr>5</nr>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">12.39</price>
+            <nettoPrice cur="EUR">10.07</nettoPrice>
+         </Piece>
+      </Pieces>
+      <Books>
+         <Book>
+            <content>Irish Songs</content>
+            <amount_of_pages>75</amount_of_pages>
+            <ISBN>444-95-745-1081-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">39.99</price>
+            <nettoPrice cur="PLN">32.51</nettoPrice>
+         </Book>
+         <Book>
+            <content>Sonates</content>
+            <amount_of_pages>78</amount_of_pages>
+            <ISBN>412-55-987-1875-9</ISBN>
+            <publisherName>Casa Ricordi</publisherName>
+            <price cur="PLN">41.99</price>
+            <nettoPrice cur="PLN">34.14</nettoPrice>
+         </Book>
+         <Book>
+            <content>Songs</content>
+            <amount_of_pages>140</amount_of_pages>
+            <ISBN>111-95-745-5781-6</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">35.99</price>
+            <nettoPrice cur="PLN">29.26</nettoPrice>
+         </Book>
+         <Book>
+            <content>Variations</content>
+            <amount_of_pages>90</amount_of_pages>
+            <ISBN>101-78-245-0781-1</ISBN>
+            <publisherName>Oxford University Press</publisherName>
+            <price cur="USD">13.99</price>
+            <nettoPrice cur="USD">11.37</nettoPrice>
+         </Book>
+      </Books>
+   </Composer>
+   <Composer>
+      <composer first_name="Jan Sebastian" surname="Bach"/>
+      <Pieces>
+         <Piece>
+            <name>Allemande</name>
+            <tonation>g-minor</tonation>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">9.99</price>
+            <nettoPrice cur="PLN">8.12</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Brandenburg Concerto</name>
+            <tonation>G-major</tonation>
+            <nr>4</nr>
+            <level>very hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="USD">3.00</price>
+            <nettoPrice cur="USD">2.44</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Orchestral Suite</name>
+            <tonation>C-major</tonation>
+            <nr>1</nr>
+            <level>very hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="EUR">14.39</price>
+            <nettoPrice cur="EUR">11.70</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Orchestral Suite</name>
+            <tonation>D-major</tonation>
+            <nr>3</nr>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">19.99</price>
+            <nettoPrice cur="PLN">16.25</nettoPrice>
+         </Piece>
+         <Piece>
+            <name>Violin Concerto</name>
+            <tonation>D-major</tonation>
+            <level>hard</level>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">18.99</price>
+            <nettoPrice cur="PLN">15.44</nettoPrice>
+         </Piece>
+      </Pieces>
+      <Books>
+         <Book>
+            <content>Canons</content>
+            <amount_of_pages>56</amount_of_pages>
+            <ISBN>330-23-987-4343-2</ISBN>
+            <publisherName>PWM</publisherName>
+            <price cur="EUR">15.99</price>
+            <nettoPrice cur="EUR">13.00</nettoPrice>
+         </Book>
+         <Book>
+            <content>Cantatas</content>
+            <amount_of_pages>65</amount_of_pages>
+            <ISBN>311-95-745-0581-1</ISBN>
+            <publisherName>Oxford University Press</publisherName>
+            <price cur="EUR">19.99</price>
+            <nettoPrice cur="EUR">16.25</nettoPrice>
+         </Book>
+         <Book>
+            <content>Motets</content>
+            <amount_of_pages>100</amount_of_pages>
+            <ISBN>341-95-000-0781-1</ISBN>
+            <publisherName>Universal Edition</publisherName>
+            <price cur="PLN">49.99</price>
+            <nettoPrice cur="PLN">40.64</nettoPrice>
+         </Book>
+         <Book>
+            <content>Organ Works</content>
+            <amount_of_pages>320</amount_of_pages>
+            <ISBN>671-15-665-0781-1</ISBN>
+            <publisherName>Casa Ricordi</publisherName>
+            <price cur="USD">49.99</price>
+            <nettoPrice cur="USD">40.64</nettoPrice>
+         </Book>
+      </Books>
+   </Composer>
+   <Publisher>
+      <namePublisher>PWM</namePublisher>
+   </Publisher>
+   <Publisher>
+      <namePublisher>Universal Edition</namePublisher>
+   </Publisher>
+   <Publisher>
+      <namePublisher>Edition Peters</namePublisher>
+   </Publisher>
+   <Publisher>
+      <namePublisher>Zimmermann</namePublisher>
+   </Publisher>
+   <Publisher>
+      <namePublisher>Oxford University Press</namePublisher>
+   </Publisher>
+   <Publisher>
+      <namePublisher>Casa Ricordi</namePublisher>
+   </Publisher>
+   <Statistics>
+      <Statistic>
+         <name>Date of generation</name>
+         <value>11/19/2022</value>
+      </Statistic>
+      <Statistic>
+         <name>Amount of pieces</name>
+         <value>20</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of pieces which are in EUR</name>
+         <value>78.54</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of pieces which are in PLN</name>
+         <value>182.9</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of pieces which are in USD</name>
+         <value>11.57</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of pieces which are in EUR</name>
+         <value>13.09</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of pieces which are in PLN</name>
+         <value>18.29</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of pieces which are in USD</name>
+         <value>2.89</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of piece which are in EUR</name>
+         <value>6.39</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of piece which are in PLN</name>
+         <value>8.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of piece which are in USD</name>
+         <value>2.57</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of piece which are in EUR</name>
+         <value>20.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of piece which are in PLN</name>
+         <value>34.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of piece which are in USD</name>
+         <value>3</value>
+      </Statistic>
+      <Statistic>
+         <name>Price of the last piece of each composer in original data set</name>
+         <value>8.99 17.99 34.99 9.99</value>
+      </Statistic>
+      <Statistic>
+         <name>Amount of books</name>
+         <value>16</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of books which are in EUR</name>
+         <value>111.96</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of books which are in PLN</name>
+         <value>443.90</value>
+      </Statistic>
+      <Statistic>
+         <name>The sum of prices of books which are in USD</name>
+         <value>443.90</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of books which are in EUR</name>
+         <value>27.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of books which are in PLN</name>
+         <value>44.39</value>
+      </Statistic>
+      <Statistic>
+         <name>The average price of books which are in USD</name>
+         <value>31.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of book which are in EUR</name>
+         <value>15.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of book which are in PLN</name>
+         <value>19.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The lowest price of book which are in USD</name>
+         <value>13.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of book which are in EUR</name>
+         <value>49.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of book which are in PLN</name>
+         <value>89.99</value>
+      </Statistic>
+      <Statistic>
+         <name>The highest price of book which are in USD</name>
+         <value>49.99</value>
+      </Statistic>
+      <Statistic>
+         <name>Price of the last book of each composer in original data set</name>
+         <value>39.99 49.99 13.99 49.99</value>
+      </Statistic>
+      <Statistic>
+         <name>Amount of publishers</name>
+         <value>6</value>
+      </Statistic>
+   </Statistics>
+</Music>
