@@ -2,12 +2,6 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      id="gameboard" width="800" height="800" >
 
-    <!-- <rect id="gameboard"  
-        fill="#224"
-        x="100%"
-        y="100%"/>-->
-
-     <!--<svg id="gameboard" backgroundcolor="#224" width="100%" height="100vh"></svg>-->
     <title>Collector of diamonds</title>
     <desc>
         Click or tap as many diamonds as you can
