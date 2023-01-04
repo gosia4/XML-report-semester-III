@@ -1,0 +1,288 @@
+documentInformation
+{
+	font-size: 14px;
+	text-align: center;
+}
+author
+{
+	display: block;
+}
+
+documentInformation studentID
+{
+	font-style: italic;
+}
+
+creationDate, lastModificationDate {
+	display: block;
+}
+
+creationDate::before
+{
+	white-space:pre;
+	content: "Created: ";
+	display: inline;
+}
+
+lastModificationDate::before
+{
+    white-space: pre;
+	content: "Modified: ";
+	display: inline;
+}
+composers {
+	font-family: Helvetica;
+	color: #000000;
+	line-height: 200%;
+	/*background-color: #cce5ff;*/
+	margin: 25px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: block;
+	box-shadow: 0px 0px 6px #000;
+	background-image: url("index.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+composer, publisher[nr]{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+composer::before{
+	content: " Composer's id: " attr(id) " Date of birth " attr(born);
+	display: block;
+}
+	composer > first_name, composer > surname {
+		color: #9400d3;
+		font-style: italic;
+		text-align: center;
+		/*background-color: #cce5ff;*/
+		text-decoration: underline;
+		font-weight: bolder;
+		font-size: 20px;
+		display: block flow;
+	}
+/*first_name:hover{background-color:green;}
+surname:hover{background-color:green;}*/
+name:hover{background-color:white;}
+book:hover {
+	background-color: #C8A23A;
+}
+piece:active {
+	background-color: #dda0dd;
+}
+
+
+nationality, lifespan, city, ZIPcode{
+	display: block inline;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+	background-color: #6eabeb;
+}
+nationality:before{
+	content: "Nationality: ";
+	font-weight: normal;
+	display: inline;
+}
+
+lifespan:before{
+	content: "He lived ";
+	font-weight: normal;
+	display: inline;
+}
+lifespan:after{
+	content: " years";
+	font-weight: normal;
+	display: inline;
+}
+city:before{
+	content: "Place of birth: ";
+	font-weight: normal;
+	display: inline;
+}
+ZIPcode:before{
+	content: "ZIP-code: ";
+	font-weight: normal;
+	display: inline;
+}
+
+
+pieces {
+	column-count: 5;
+	display: flex;
+	font-weight: normal;
+	/*background: #deb887;*/
+	column-span: all;
+}
+
+piece:before{
+	content: "Piece nr " attr(nr);
+	font-weight: normal;
+	display: inline;
+}
+piece > name {
+	column-count: 5;
+	display: flex;
+	font-weight: normal;
+	background: #808000;
+	column-span: all;
+}
+piece > tonation, piece > op, piece > nr, piece > publisher[nr], piece > price {
+	display: list-item;
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	background: #808000;
+}
+
+/*piece:first-child{
+	font-style: italic;
+	color: #b32d2e;	
+}*/
+
+op{font-weight: normal;}
+nr{font-weight: normal;}
+level, instruments {
+	display: list-item;
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	background: #808000;
+}
+
+tonation:before{
+	content: "in ";
+	font-weight: normal;
+	display: inline;
+}
+op::before{
+	content: "op. ";
+	font-weight: normal;
+	display: inline;
+}
+nr::before{
+	content: "nr ";
+	font-weight: normal;
+	display: inline;
+}
+level::before{
+	content: "Level: ";
+	font-weight: normal;
+	display: inline;
+}
+publisher[nr]::after{
+	content: "Publisher: " attr(nr);
+	font-weight: normal;
+	display: inline;
+}
+price::before{
+	content: "The price: ";
+	font-weight: normal;
+	display: inline;
+}
+
+price::after{
+	content: " " attr(cur);
+	display: inline;
+}
+
+books {
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	/*background: #deb887;*/
+}
+book, content {
+	counter-increment: local;
+	display: block;
+	width: 25%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	/*background: #ffffff;*/
+	
+}
+
+book::before{
+	content: "Book no " attr(no);
+}
+amount_of_pages, ISBN {
+	counter-increment: local;
+	display: block;
+	width: 75%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	background: #deb887;
+}
+publisher[nr] {
+	counter-increment: local;
+	display: block;
+	width: 70%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	background: #deb887;
+}
+
+
+publisher[id] {
+	counter-increment: local;
+	display: table-row-group;
+	width: 10%;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px #828485;
+	
+	column-span: all;
+}
+namePublisher{
+	counter-increment: local;
+	display: block;
+	width: 80%;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px #828485;
+	
+}
+publisher[id]:before{content: "Publisher no " attr(id);}
+publisher[id]:hover {
+	background: #cce5ff;
+}
+namePublisher:hover {
+	background: #cce5ff;
+}
+
+content::before {
+	content: "Book title: ";
+	font-weight: normal;
+	display: inline;
+}
+amount_of_pages::after{
+	content:" pages";
+	font-weight: normal;
+	display: inline;
+}
+
+ISBN::before{
+	content:"ISBN: ";
+	font-weight: normal;
+	display: inline;
+}

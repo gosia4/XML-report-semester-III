@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta title="Strona główna">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+    }
+
+    #tTitle {
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/css.jpg");
+        color:whitesmoke;
+        text-align: center;
+        padding: 70px 0;
+    }
+
+    span + span {
+        margin-left: 1em;
+    }
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none; }
+
+    a:hover {
+        color: black;
+        text-decoration: none; }
+
+    a:active {
+        color: black;
+        text-decoration: none; }
+
+    /* Style the header */
+    header {
+        margin: auto;
+        padding: 30px;
+        text-align: right;
+        font-family: "Source Serif Pro";
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        background: #ccc;
+        padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    /**/
+    body, html {
+        margin: 0;
+        height: 100%;
+    }
+
+    .outer {
+        display: flex;
+        min-height: 100%;
+        flex-direction: column; /* added */
+    }
+
+    .row {
+        display: flex;
+        flex: 1; /* added */
+    }
+
+    .item {
+        padding: 2px;
+        width: 400px;
+        height: 400px;
+        border: 3px dashed black;
+        flex: 1; /* added */
+    }
+
+    .solo {
+        padding: 2px;
+        width: 1100px;
+        height: 400px;
+        border: 3px dashed black;
+        /*flex: 1; !* added *!*/
+    }
+
+    hr.style {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8b8b inset;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    textarea {
+        width: 1000px;
+        height: 580px;
+        max-width: 1000px;
+        max-height: 580px;
+        min-height: 580px;
+        min-width: 1000px;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <span class="dLink" id="index"><a href="index.html">Main page</a></span>
+        <span class="dLink" id="task1"><a href="task1.html">Task 1</a></span>
+        <span class="dLink" id="task2"><a href="task2.html">Task 2</a></span>
+        <span class="dLink" id="task3"><a href="task3.html">Task 3</a></span>
+        <span class="dLink" id="task4"><a href="task4.html">Task 4</a></span>
+        <span class="dLink" id="task5"><a href="task5.html">Task 5</a></span>
+    </header>
+    <div id="tTitle">
+        <h1>Task 2</h1>
+        <h2>This is the second task, where are presented css and the most important fragments from xml schema.</h2>
+    </div>
+    
+    <section>
+        <nav>
+            <h4>Task 2</h4>
+            <h5>Modify necessary data in the xml file from previous task</h5>
+            <ul>
+                <li>add additional information - such as, for example, information about the author of the document, date of last modification, etc.<li>
+                <li>there should be about 20 data items (there may be more) - the data should be numbered (numbering in the element, free format - it does not have to be 1, 2, 3, ...)</li>
+            </ul>
+            <h5>Then create a cascading CSS style sheet so that you can view the content of the XML document in the browser. Format the information as two sections (using tables, borders, etc.):</h5>
+            <ul>
+                <li>the first section should contain general information about the document, read from the selected tags (such as the authors of the document, description of its content, etc.);</li>
+                <li>the second section (with columnar or another layout) should contain the correct content from the rest of the tags containing regular data.</li>
+            </ul>
+            <h5>When building a CSS document:</h5>
+            <ul>
+                <li>combine XML document with data with a document describing their formatting (external CSS file);</li>
+                <li>use different formatting layouts (style: display);</li>
+                <li>use different selectors and pseudo-classes;</li>
+                <li>try formatting in the form of a numbered list - showing the number of consecutive nodes/data;</li>
+                <li>use modifications to the background of tables, bullets in lists, etc .;</li>
+                <li>adjust the fonts, colors, and text layout on the page;</li>
+                <li>do the project professionally and neatly, in a way that is attractive to the eye.</li>
+            </ul>
+            <h5>When building XML Schema, pay attention to:</h5>
+            <ul>
+                <li>namespace declarations (standard and custom);</li>
+                <li>precise type determination (built-in: fixed and floating point numbers, dates, currencies, etc.);</li>
+                <li>applying constraints (e.g. string lengths, ranges of numbers), patterns (xsd: pattern), enumerations (xsd: enumeration);</li>
+                <li>the ability to define your own data types (xsd: simpleType, xsd: complexType), use of various content models (e.g. xsd: choice, xsd: sequence);</li>
+                <li>specifying optional and required elements and attributes;</li>
+                <li>specifying attributes for items (xsd: attribute, xsd: attributeGroup);</li>
+                <li>specifying a group of elements (xsd: group);</li>
+                <li>placing links to various places in the document, using keys and selectors (xsd: key, xsd: keyref);</li>
+            </ul>
+    
+        </nav>
+    
+        <article>
+            <textarea id="myTextArea"><?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                documentInformation
+{
+	font-size: 14px;
+	text-align: center;
+}
+author
+{
+	display: block;
+}
+
+documentInformation studentID
+{
+	font-style: italic;
+}
+
+creationDate, lastModificationDate {
+	display: block;
+}
+
+creationDate::before
+{
+	white-space:pre;
+	content: "Created: ";
+	display: inline;
+}
+
+lastModificationDate::before
+{
+    white-space: pre;
+	content: "Modified: ";
+	display: inline;
+}
+composers {
+	font-family: Helvetica;
+	color: #000000;
+	line-height: 200%;
+	/*background-color: #cce5ff;*/
+	margin: 25px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: block;
+	box-shadow: 0px 0px 6px #000;
+	background-image: url("index.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+composer, publisher[nr]{
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+composer::before{
+	content: " Composer's id: " attr(id) " Date of birth " attr(born);
+	display: block;
+}
+	composer > first_name, composer > surname {
+		color: #9400d3;
+		font-style: italic;
+		text-align: center;
+		/*background-color: #cce5ff;*/
+		text-decoration: underline;
+		font-weight: bolder;
+		font-size: 20px;
+		display: block flow;
+	}
+/*first_name:hover{background-color:green;}
+surname:hover{background-color:green;}*/
+name:hover{background-color:white;}
+book:hover {
+	background-color: #C8A23A;
+}
+piece:active {
+	background-color: #dda0dd;
+}
+
+
+nationality, lifespan, city, ZIPcode{
+	display: block inline;
+	font-weight: bold;
+	padding: 5px;
+	margin: 5px;
+	background-color: #6eabeb;
+}
+nationality:before{
+	content: "Nationality: ";
+	font-weight: normal;
+	display: inline;
+}
+
+lifespan:before{
+	content: "He lived ";
+	font-weight: normal;
+	display: inline;
+}
+lifespan:after{
+	content: " years";
+	font-weight: normal;
+	display: inline;
+}
+city:before{
+	content: "Place of birth: ";
+	font-weight: normal;
+	display: inline;
+}
+ZIPcode:before{
+	content: "ZIP-code: ";
+	font-weight: normal;
+	display: inline;
+}
+
+
+pieces {
+	column-count: 5;
+	display: flex;
+	font-weight: normal;
+	/*background: #deb887;*/
+	column-span: all;
+}
+
+piece:before{
+	content: "Piece nr " attr(nr);
+	font-weight: normal;
+	display: inline;
+}
+piece > name {
+	column-count: 5;
+	display: flex;
+	font-weight: normal;
+	background: #808000;
+	column-span: all;
+}
+piece > tonation, piece > op, piece > nr, piece > publisher[nr], piece > price {
+	display: list-item;
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	background: #808000;
+}
+
+/*piece:first-child{
+	font-style: italic;
+	color: #b32d2e;	
+}*/
+
+op{font-weight: normal;}
+nr{font-weight: normal;}
+level, instruments {
+	display: list-item;
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	background: #808000;
+}
+
+tonation:before{
+	content: "in ";
+	font-weight: normal;
+	display: inline;
+}
+op::before{
+	content: "op. ";
+	font-weight: normal;
+	display: inline;
+}
+nr::before{
+	content: "nr ";
+	font-weight: normal;
+	display: inline;
+}
+level::before{
+	content: "Level: ";
+	font-weight: normal;
+	display: inline;
+}
+publisher[nr]::after{
+	content: "Publisher: " attr(nr);
+	font-weight: normal;
+	display: inline;
+}
+price::before{
+	content: "The price: ";
+	font-weight: normal;
+	display: inline;
+}
+
+price::after{
+	content: " " attr(cur);
+	display: inline;
+}
+
+books {
+	font-weight: normal;
+	margin: 5px;
+	padding-left: 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	/*background: #deb887;*/
+}
+book, content {
+	counter-increment: local;
+	display: block;
+	width: 25%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	/*background: #ffffff;*/
+	
+}
+
+book::before{
+	content: "Book no " attr(no);
+}
+amount_of_pages, ISBN {
+	counter-increment: local;
+	display: block;
+	width: 75%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	background: #deb887;
+}
+publisher[nr] {
+	counter-increment: local;
+	display: block;
+	width: 70%;
+	padding: 5px;
+	margin: 15px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 6px #828485;
+	background: #deb887;
+}
+
+
+publisher[id] {
+	counter-increment: local;
+	display: table-row-group;
+	width: 10%;
+	padding: 10px;
+	margin: 30px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px #828485;
+	
+	column-span: all;
+}
+namePublisher{
+	counter-increment: local;
+	display: block;
+	width: 80%;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px #828485;
+	
+}
+publisher[id]:before{content: "Publisher no " attr(id);}
+publisher[id]:hover {
+	background: #cce5ff;
+}
+namePublisher:hover {
+	background: #cce5ff;
+}
+
+content::before {
+	content: "Book title: ";
+	font-weight: normal;
+	display: inline;
+}
+amount_of_pages::after{
+	content:" pages";
+	font-weight: normal;
+	display: inline;
+}
+
+ISBN::before{
+	content:"ISBN: ";
+	font-weight: normal;
+	display: inline;
+}
+</textarea>
+<iframe src="sites/2/xmlFile.xml" width=1000px height="600px" ></iframe>
+</article>
+</section>
+
+<footer>
+    <p>Report summerizing all the tasks prepared for the XML Techonologies subject.</p>
+</footer>
+</body>
+</html>
