@@ -3,6 +3,28 @@
     max-width: 100%;
     background: #224;
 }
+/* span {
+    font-size: 40;
+    text-align: left;
+    color: antiquewhite;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none; }
+
+a:hover {
+    color: black;
+    text-decoration: none; }
+
+a:active {
+    color: black;
+    text-decoration: none; }
+ */
 /*.count {  class for all the text elements 
     fill: lightYellow; /* kolor tekstu 
     font: 20px Consolas, monospace;
