@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Task 5</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+	Loading data<br>
+	<input class="form-control success" type="file" id="fileName" accept=".xml"> Give the name of a file, which data will be loaded from.<br>
+	<button id="btnLoad" class="button button1" >Load the file</button>
+	<button id="btnSave" class="button button2" >Save the file</button>
+	<p>Loaded content of a file</p>
+	<table id="fileContent" ></table>
+	<p>Note that each composer has 5 pieces and 4 books. <br>First 5 pieces and 4 books belong to the first composer and so on.</p>
+	<table id="fileContent2" ></table>
+	<table id="fileContent3" ></table>
+	<table id="fileContent4" ></table>
+	<p>Current file content</p>
+	<table id="afileContent" ></table>
+	<table id="afileContent2" ></table>
+	<table id="afileContent3" ></table>
+	<table id="afileContent4" ></table>
+	
+	<hr>
+	<h3>Deleting data</h3>
+	<input id="iDeleteComposer" type ="number"> Give number of a composer to delete.<br>
+	<button id="btnDeleteComposer" class="button button1" >Delete composer</button><br>
+
+	<input id="iDeletePiece" type ="number"> Give number of a piece to delete.<br>
+	<button id="btnDeletePiece" class="button button1" >Delete piece</button><br>
+
+	<input id="iDeleteBook" type ="number"> Give number of a book to delete.<br>
+	<button id="btnDeleteBook" class="button button1" >Delete book</button><br>
+
+	<input id="iDeletePublisher" type ="number"> Give number of a publisher to delete.<br>
+	<button id="btnDeletePublisher" class="button button1" >Delete publisher</button><br>
+	
+
+<hr>
+<h3>Adding data</h3>
+<button id="btnAddComposer" class="button button1" >Add composer</button><br>
+<button id="btnAddPiece" class="button button1" >Add piece</button><br>
+<button id="btnAddBook" class="button button1" >Add book</button><br>
+<button id="btnAddPublisher" class="button button1" >Add publisher</button><br>
+<hr>
+
+<h3>Composer modification</h3>
+	<button id="btnUpdate" class="button button1" >Update data</button><br>
+	<input id="iComposerUpdate" type ="number">Give number of composer.<br><br>
+
+	<input id="iId" type="number"> Give new id of a composer.<br><br>
+
+	<input id="iBorn"/> Year of birth.<br><br>
+
+	<select id="iGender">
+		<option>male</option>
+		<option>female</option>
+	</select> Gender type<br>
+	<input id="ifirst_name"/> Give the first name.<br>
+	<input id="isurname"/> Give the surname.<br>
+	<input id="inationality"/> Give the nationality.<br>
+	<input id="ilifespan" type="number"/>Give lifespan.<br>
+	<input id="icity"/>Give the city.<br>
+	<hr>
+
+	<h3>Pieces modification</h3>
+	<button id="btnUpdatePiece" class="button button1" >Update data</button><br>
+	<input id="iPieceUpdate" type ="number">Give number of piece.<br><br>
+
+	<input id="iNr" type="number"> Give new number of piece.<br><br>
+
+	<input id="iname">Title of a piece.<br><br>
+	<input id="itonation">Tonation of a piece.<br><br>
+	<select id="ilevel">
+		<option>very hard</option>
+		<option>hard</option>
+		<option>medium</option>
+		<option>easy</option>
+		<option>very easy</option>
+	</select>Level<br>
+	
+	<input id="iinstruments">Instruments.<br><br>
+	<input id="inr" type="number">Number of a publisher.<br><br>
+	<input id="iprice" type="number">Price<br><br>
+	<select id="icur">
+		<option>PLN</option>
+		<option>USD</option>
+		<option>EUR</option>
+	</select>Currency<br>
+	<hr>
+	<h3>Books modification</h3>
+	<button id="btnUpdateBook" class="button button1" >Update data</button><br>
+	<input id="iBookUpdate" type ="number">Give number of book.<br><br>
+
+	<input id="iNo" type="number"> Give new number of book.<br><br>
+
+	<input id="icontent">Title of a book.<br><br>
+	<input id="iamount_of_pages" type="number">Amount of pages of a book.<br><br>
+	<input id="iISBN" type="number">ISBN number of book.<br><br>
+	<input id="inrbook" type="number">Number of a publisher.<br><br>
+	<input id="ipricebook" type="number">Price<br><br>
+	<select id="icurbook">
+		<option>PLN</option>
+		<option>USD</option>
+		<option>EUR</option>
+	</select>Currency<br>
+	<hr>
+	<h3>Publisher modification</h3>
+	<button id="btnUpdatePublisher" class="button button1" >Update data</button><br>
+	<input id="iPublisherUpdate" type ="number">Give number of publisher.<br><br>
+	<input id="iid" type="number"> Give new id of publisher.<br><br>
+
+	<input id="inamePublisher">Give new name of publisher.<br><br>
+
+	<script src="script.js"></script>
+</body>
+</html>

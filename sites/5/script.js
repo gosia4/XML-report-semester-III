@@ -1,171 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<meta title="Mian site">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    img {
-    }
-
-    #tTitle {
-        height: 400px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/9.jpg");
-        color:whitesmoke;
-        text-align: center;
-        padding: 70px 0;
-    }
-
-    span + span {
-        margin-left: 1em;
-    }
-    a:link {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: black;
-        text-decoration: none; }
-
-    a:hover {
-        color: black;
-        text-decoration: none; }
-
-    a:active {
-        color: black;
-        text-decoration: none; }
-
-    /* Style the header */
-    header {
-        margin: auto;
-        padding: 30px;
-        text-align: right;
-        font-family: "Source Serif Pro";
-    }
-
-    /* Create two columns/boxes that floats next to each other */
-    nav {
-        float: left;
-        width: 30%;
-        background: #ccc;
-        padding: 20px;
-    }
-
-    /* Style the list inside the menu */
-    nav ul {
-    }
-
-    article {
-        float: left;
-        padding: 20px;
-        width: 70%;
-        background-color: #f1f1f1;
-    }
-
-    /* Clear floats after the columns */
-    section::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Style the footer */
-    footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-    }
-    /**/
-    body, html {
-        margin: 0;
-        height: 100%;
-    }
-
-    .outer {
-        display: flex;
-        min-height: 100%;
-        flex-direction: column; /* added */
-    }
-
-    .row {
-        display: flex;
-        flex: 1; /* added */
-    }
-
-    .item {
-        padding: 2px;
-        width: 400px;
-        height: 400px;
-        border: 3px dashed black;
-        flex: 1; /* added */
-    }
-
-    .solo {
-        padding: 2px;
-        width: 1100px;
-        height: 400px;
-        border: 3px dashed black;
-        /*flex: 1; !* added *!*/
-    }
-
-    hr.style {
-        height: 10px;
-        border: 0;
-        box-shadow: 0 10px 10px -10px #8c8b8b inset;
-    }
-
-    h4{
-        text-align: center;
-    }
-
-    textarea {
-        width: 1000px;
-        height: 580px;
-        max-width: 1000px;
-        max-height: 580px;
-        min-height: 580px;
-        min-width: 1000px;
-    }
-</style>
-
-</head>
-<body>
-    <header>
-        <span class="dLink" id="index"><a href="website.html">Main page</a></span>
-        <span class="dLink" id="task1"><a href="task1.html">Task 1</a></span>
-        <span class="dLink" id="task2"><a href="task2.html">Task 2</a></span>
-        <span class="dLink" id="task3"><a href="task3.html">Task 3</a></span>
-        <span class="dLink" id="task4"><a href="task4.html">Task 4</a></span>
-        <span class="dLink" id="task5"><a href="task5.html">Task 5</a></span>
-    </header>
-    <div id="tTitle">
-        <h1>Task 5</h1>
-        <h2>It is presented the most important fragments from js file and the output.</h2>
-    </div>
-    
-    <section>
-        <nav>
-            <h4>Task 5</h4>
-            <h5>You should create a website with the use of JavaScript (DOM) enabling access to data from an XML file, modifying data from an XML file, checking the correctness of the modified data.
-
-                The program is to be interactive and allow you to open an XML file with a predetermined structure, add new entries to it, delete and edit existing ones.</h5>
-        </nav>
-    
-        <article>
-            <textarea id="myTextArea">
-                let xmlDoc;
+let xmlDoc;
 
 document.getElementById("btnLoad").onclick = function () {
     var path = document.getElementById("fileName");
@@ -380,7 +213,17 @@ function deleteComposer(position){
     x.parentNode.removeChild(x);
     updateXML();
 }
-
+//pieces usuwanie działa
+function deletePiece(position){
+    var x = xmlDoc.getElementsByTagName("piece")[position-1];
+    x.parentNode.removeChild(x);
+    updateXML();
+}
+function deleteBook(position){
+    var x = xmlDoc.getElementsByTagName("book")[position-1];
+    x.parentNode.removeChild(x);
+    updateXML();
+}
 function deletePublisher(position){
     var publisher=xmlDoc.getElementsByTagName("publisher");
     var x = xmlDoc.getElementsByTagName("Publisher")[position-1]; 
@@ -439,6 +282,47 @@ function addPiece(){
 
 }
 
+document.getElementById("btnAddBook").onclick = function () {
+    addBook();
+    updateXML();
+}
+function addBook(){
+
+    oldNode=xmlDoc.getElementsByTagName('book')[0];
+    var count = xmlDoc.getElementsByTagName("book").length;
+    newNode=oldNode.cloneNode(true);
+    var x = xmlDoc.getElementsByTagName("book");
+
+    // Start to fetch the data by using TagName
+    for (i = 0; i < x.length; i++) {
+        if (parseInt(x[i].getAttribute("no")) === count)
+            count++;
+    }
+
+    newNode.setAttribute("no", count);
+    xmlDoc.documentElement.getElementsByTagName("book")[0].appendChild(newNode);
+}
+document.getElementById("btnAddPublisher").onclick = function () {
+    addPublisher();
+    updateXML();
+}
+function addPublisher(){
+
+    oldNode=xmlDoc.getElementsByTagName('Publisher')[0];
+    var count = xmlDoc.getElementsByTagName("Publisher").length;
+    newNode=oldNode.cloneNode(true);
+    var x = xmlDoc.getElementsByTagName("Publisher");
+
+    // Start to fetch the data by using TagName
+    for (i = 0; i < x.length; i++) {
+        if (parseInt(x[i].getAttribute("id")) === count)
+            count++;
+    }
+
+    newNode.setAttribute("id", count);
+    xmlDoc.getElementsByTagName("composers")[0].appendChild(newNode);
+}
+
 
 
 
@@ -493,7 +377,133 @@ function idCheck(id){
     return result;
 }
 
+//pieces
 
+document.getElementById("btnUpdatePiece").onclick = function () {
+
+    if(idCheckPiece(document.getElementById("iNr").value)) {
+    var val = document.getElementById("iPieceUpdate").value;
+    var composer = xmlDoc.getElementsByTagName("piece")[val];
+    var publisher = xmlDoc.getElementsByTagName("publisher")[val];
+    if(!(document.getElementById("iNr").value === null || document.getElementById("iNr").value === "" )) {
+        composer.attributes[0].nodeValue = document.getElementById("iNr").value;
+    }
+    if(!(document.getElementById("iname").value === null || document.getElementById("iname").value === "" )) {
+        composer.getElementsByTagName("name")[0].childNodes[0].nodeValue = document.getElementById("iname").value;
+    }
+    if(!(document.getElementById("itonation").value === null || document.getElementById("itonation").value === "" )) {
+        composer.getElementsByTagName("tonation")[0].childNodes[0].nodeValue = document.getElementById("itonation").value;
+    }
+    if(!(document.getElementById("ilevel").value === null || document.getElementById("ilevel").value === "" )) {
+        composer.getElementsByTagName("level")[0].childNodes[0].nodeValue = document.getElementById("ilevel").value;
+    }
+    if(!(document.getElementById("iinstruments").value === null || document.getElementById("iinstruments").value === "" )) {
+        composer.getElementsByTagName("instruments")[0].childNodes[0].nodeValue = document.getElementById("iinstruments").value;
+    }
+
+    if(!(document.getElementById("inr").value === null || document.getElementById("inr").value === "" )) {
+        if(!idCheckPublisher(document.getElementById("inr").value)) {
+            publisher.attributes[0].nodeValue = document.getElementById("inr").value;
+        }
+    else{
+        alert("Given number of publisher does not exist.");
+    }
+    }
+    if(!(document.getElementById("iprice").value === null || document.getElementById("iprice").value === "" )) {
+        publisher.getElementsByTagName("price")[0].childNodes[0].nodeValue = document.getElementById("iprice").value;
+    }
+    publisher.getElementsByTagName("price")[0].attributes[0].nodeValue = document.getElementById("icur").value;
+
+     }
+     else
+         alert("Given number exists.");
+         updateXML();
+         
+
+         
+
+}
+
+function idCheckPiece(id){
+    var x = xmlDoc.getElementsByTagName("piece");
+    var result = true;
+    // Start to fetch the data by using TagName
+    for (var i = 0; i < x.length; i++) {
+        if(x[i].getAttribute("nr") === id)
+            result = false;
+    }
+    return result;
+}
+
+//books
+document.getElementById("btnUpdateBook").onclick = function () {
+
+    if(idCheckBook(document.getElementById("iNo").value)) {
+    var val = document.getElementById("iBookUpdate").value;
+    var composer = xmlDoc.getElementsByTagName("book")[val];
+    if(!(document.getElementById("iNo").value === null || document.getElementById("iNo").value === "" )) {
+        composer.attributes[0].nodeValue = document.getElementById("iNo").value;
+    }
+    if(!(document.getElementById("icontent").value === null || document.getElementById("icontent").value === "" )) {
+        composer.getElementsByTagName("content")[0].childNodes[0].nodeValue = document.getElementById("icontent").value;
+    }
+    if(!(document.getElementById("iamount_of_pages").value === null || document.getElementById("iamount_of_pages").value === "" )) {
+        composer.getElementsByTagName("amount_of_pages")[0].childNodes[0].nodeValue = document.getElementById("iamount_of_pages").value;
+    }
+    if(!(document.getElementById("iISBN").value === null || document.getElementById("iISBN").value === "" )) {
+        composer.getElementsByTagName("ISBN")[0].childNodes[0].nodeValue = document.getElementById("iISBN").value;
+    }
+if(!(document.getElementById("inrbook").value === null || document.getElementById("inrbook").value === "" )) {
+         
+      if(idCheckPublisher(document.getElementById("inrbook").value)) {
+           composer.getElementsByTagName("publisher")[0].attributes[0].nodeValue = document.getElementById("inrbook").value;
+        }else{
+        alert("Given number of publisher does not exist.");
+    }
+    }
+    
+    if(!(document.getElementById("ipricebook").value === null || document.getElementById("ipricebook").value === "" )) {
+        composer.getElementsByTagName("publisher")[0].getElementsByTagName("price")[0].childNodes[0].nodeValue = document.getElementById("ipricebook").value;
+    }
+    composer.getElementsByTagName("publisher")[0].getElementsByTagName("price")[0].attributes[0].nodeValue = document.getElementById("icurbook").value;
+
+     }
+     else
+         alert("Given number exists.");
+         updateXML();
+         
+}
+
+function idCheckBook(id){
+    var x = xmlDoc.getElementsByTagName("book");
+    var result = true;
+    // Start to fetch the data by using TagName
+    for (var i = 0; i < x.length; i++) {
+        if(x[i].getAttribute("no") === id)
+            result = false;
+    }
+    return result;
+}
+
+//publisher
+document.getElementById("btnUpdatePublisher").onclick = function () {
+
+    if(idCheckPublisher(document.getElementById("iid").value)) {
+    var val = document.getElementById("iPublisherUpdate").value;
+    var composer = xmlDoc.getElementsByTagName("Publisher")[val];
+    if(!(document.getElementById("iid").value === null || document.getElementById("iid").value === "" )) {
+        composer.attributes[0].nodeValue = document.getElementById("iid").value;
+    }
+    if(!(document.getElementById("inamePublisher").value === null || document.getElementById("inamePublisher").value === "" )) {
+        composer.getElementsByTagName("namePublisher")[0].childNodes[0].nodeValue = document.getElementById("inamePublisher").value;
+    }
+    
+     }
+     else
+         alert("Given number exists.");
+         updateXML();
+         
+}
 function idCheckPublisher(id){
     var x = xmlDoc.getElementsByTagName("Publisher");
     var result = true;
@@ -504,14 +514,7 @@ function idCheckPublisher(id){
     }
     return result;
 }
-            </textarea>
-       
-            <iframe src="sites/5/page.html" width=1000px height="600px" ></iframe>
-        </article>
-    </section>
-    
-    <footer>
-        <p>Report summerizing all the tasks prepared for the XML Techonologies subject.</p>
-    </footer>
-    </body>
-    </html>
+
+
+
+
